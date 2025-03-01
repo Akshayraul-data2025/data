@@ -1,0 +1,9 @@
+{
+	"name": "adf-cource-akshay",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cf17a23f-954a-48f2-9385-7935b156f964",
+		"tenantId": "ae919b84-44ad-4476-a51a-e94b8c1074a9"
+	}
+}

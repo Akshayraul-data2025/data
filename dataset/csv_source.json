@@ -1,0 +1,86 @@
+{
+	"name": "csv_source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedserviceDL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "MW-NIFTY-50-01-Mar-2025.csv",
+				"folderPath": "csvfiles",
+				"fileSystem": "source"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SYMBOL \n",
+				"type": "String"
+			},
+			{
+				"name": "OPEN \n",
+				"type": "String"
+			},
+			{
+				"name": "HIGH \n",
+				"type": "String"
+			},
+			{
+				"name": "LOW \n",
+				"type": "String"
+			},
+			{
+				"name": "PREV. CLOSE \n",
+				"type": "String"
+			},
+			{
+				"name": "LTP \n",
+				"type": "String"
+			},
+			{
+				"name": "INDICATIVE CLOSE \n",
+				"type": "String"
+			},
+			{
+				"name": "CHNG \n",
+				"type": "String"
+			},
+			{
+				"name": "%CHNG \n",
+				"type": "String"
+			},
+			{
+				"name": "VOLUME \n(shares)",
+				"type": "String"
+			},
+			{
+				"name": "VALUE \n (₹ Crores)",
+				"type": "String"
+			},
+			{
+				"name": "52W H \n",
+				"type": "String"
+			},
+			{
+				"name": "52W L \n",
+				"type": "String"
+			},
+			{
+				"name": "30 D   %CHNG \n",
+				"type": "String"
+			},
+			{
+				"name": "365 D % CHNG \n 29-Feb-2024",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
